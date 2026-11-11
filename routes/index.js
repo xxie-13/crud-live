@@ -5,6 +5,6 @@ const userController = require('../controllers/userController');
 
 router.get('/enrollment', userController.getAllUsers);
 router.post('/enrollment',userController.createUser);
-router.delete('/enrollment',userController.deleteUser);
+router.delete('/enrollment/:id:',userController.deleteUser);
 
 module.exports = router;
